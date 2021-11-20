@@ -1,5 +1,10 @@
 <template>
+  <div id="app" class="flex container h-screen w-full">
+    
+    <!-- side bar -->
+    
 
+  </div>
 </template>
 
 <script>
