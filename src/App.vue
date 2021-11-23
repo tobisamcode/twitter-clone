@@ -9,7 +9,7 @@
         </button>
         <div>
           <button v-for="tab in tabs" :key="tab.id" @click="id = tab.id" :class="`focus:outline-none hover:text-blue flex items-center py-2 px-4 hover:bg-lightblue rounded-full mr-auto mb-3 ${ id === tab.id ? 'text-blue' : '' }`">
-            <i :class="`${ tab.icon } sm:text-sm lg:text-2xl mr-4 text-left `"></i>
+            <i :class="`${ tab.icon } sm:text-xl lg:text-2xl mr-4 text-left `"></i>
             <p class="hidden lg:block text-lg font-semibold text-left"> {{ tab.title }}  </p>
           </button>
         </div>
