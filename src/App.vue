@@ -2,20 +2,20 @@
   <preloader/>
   <div id="app" class="flex container h-screen w-full">
     <!-- side-bar -->
-    <div class="lg:w-1/5 border-r border-lighter px-2 lg:px-6 py-2 flex flex-col items-center justify-between ">
+    <div class="lg:w-1/5 border-r border-lighter sm:px-2  lg:px-6 py-2 flex flex-col items-center justify-between ">
       <div>
         <button class="h-12 w-12 hover:bg-lightblue text-3xl rounded-full text-blue">
           <i class="fab fa-twitter"></i>
         </button>
         <div>
           <button v-for="tab in tabs" :key="tab.id" @click="id = tab.id" :class="`focus:outline-none hover:text-blue flex items-center py-2 px-4 hover:bg-lightblue rounded-full mr-auto mb-3 ${ id === tab.id ? 'text-blue' : '' }`">
-            <i :class="`${ tab.icon } text-2xl mr-4 text-left `"></i>
+            <i :class="`${ tab.icon } sm:text-sm lg:text-2xl mr-4 text-left `"></i>
             <p class="hidden lg:block text-lg font-semibold text-left"> {{ tab.title }}  </p>
           </button>
         </div>
-        <button class="text-white flex justify-center items-center bg-blue rounded-full font-semibold focus:outline-none w-12 h-12 lg:h-auto lg:w-full p-3 hover:bg-darkblue">
+        <button class="text-white flex justify-center items-center bg-blue rounded-full font-semibold focus:outline-none w-12 h-12 lg:h-auto lg:w-full sm:p-1 lg:p-3 hover:bg-darkblue">
           <p class="hidden lg:block">Tweet</p>
-          <i class="fas fa-plus text-sm lg:hidden"></i>
+          <i class="fas fa-plus text-xs lg:hidden"></i>
         </button>
       </div>
       <div class="lg:w-full relative">
