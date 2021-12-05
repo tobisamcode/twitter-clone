@@ -1,4 +1,4 @@
-# twitter
+# twitter clone
 
 ## Project setup
 ```
